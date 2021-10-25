@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Storee</string>
     <string name="button_addPlacemark">Add Story</string>
+    <string name="button_getQuote">Quote</string>
     <string name="hint_placemarkTitle">Story Title</string>
     <string name="hint_placemarkDescription">Story Notes</string>
     <string name="menu_addPlacemark">Add</string>
