@@ -100,15 +100,15 @@ class PlacemarkActivity : AppCompatActivity() {
 
 //added a getQuote binding to return a random shakespearean quote via Quote button
 
-        binding.btnQuote.setOnClickListener{
-            val client = OkHttpClient().newBuilder()
-                .build()
-            val request = Request.Builder()
-                .url("https://shakespeare-quotes-gen.herokuapp.com/api/v1/quotes/single")
-                .method("GET", null)
-                .build()
-            val response = client.newCall(request).execute()
-        }
+      //  binding.btnQuote.setOnClickListener{
+      //      val client = OkHttpClient().newBuilder()
+      //          .build()
+      //      val request = Request.Builder()
+       //         .url("https://shakespeare-quotes-gen.herokuapp.com/api/v1/quotes/single")
+       //         .method("GET", null)
+      //          .build()
+      //      val response = client.newCall(request).execute()
+     //   }
 
         registerImagePickerCallback()
         registerMapCallback()
