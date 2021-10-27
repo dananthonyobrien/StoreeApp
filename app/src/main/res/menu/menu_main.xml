@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- blanking out Storee screen button to add to image instead -->
     <item
         android:id="@+id/item_add"
         android:icon="@android:drawable/ic_menu_add"

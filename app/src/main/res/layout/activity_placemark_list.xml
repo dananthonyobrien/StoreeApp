@@ -15,11 +15,6 @@
         app:elevation="0dip"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:titleTextColor="@color/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -29,6 +24,7 @@
         android:scrollbars="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <!-- blanking out quote button to get storee button working -->
     <Button
         android:id="@+id/btnQuote"
         android:layout_width="match_parent"
@@ -40,9 +36,22 @@
         android:stateListAnimator="@null"
         android:text="@string/button_getQuote"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
+        android:textSize="16sp" />
 
-        />
+    <!--<Button
+        android:id="@+id/item_add"
+        android:icon="@drawable/storee_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorAccent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/button_getQuote"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:showAsAction="always" />-->
 
     <TextView
         android:id="@+id/quote"
@@ -56,6 +65,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+
+    <ImageView
+        android:id="@+id/item_add"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:src="@drawable/storee_icon"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorPrimary" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
