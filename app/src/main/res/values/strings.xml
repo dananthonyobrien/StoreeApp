@@ -5,6 +5,7 @@
     <string name="hint_placemarkTitle">Story Title</string>
     <string name="hint_placemarkDescription">Story Notes</string>
     <string name="menu_addPlacemark">Add</string>
+    <string name="menu_deletePlacemark">Delete</string>
     <string name="menu_cancelPlacemark">Cancel</string>
     <string name="enter_placemark_title"> Please enter a Story Title </string>
     <string name="save_placemark"> Store Story </string>

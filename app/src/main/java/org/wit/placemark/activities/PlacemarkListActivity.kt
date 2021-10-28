@@ -73,4 +73,23 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
         binding.recyclerView.adapter?.notifyDataSetChanged()
     }
 
+    //Delete function
+    //fun deletePlacemark(placemarks: PlacemarkModel) {
+    //}
+
+    /*fun delete() {
+        placemarkView.listPlacemarks(placemarks)
+        var searchId = placemarkView.getId()
+        val aPlacemark = search(searchId)
+
+        if(aPlacemark != null) {
+            placemarks.delete(aPlacemark)
+            println("Placemark Deleted...")
+            placemarkView.listPlacemarks(placemarks)
+        }
+        else
+            println("Placemark Not Deleted...")
+    }
+*/
+
 }

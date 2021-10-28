@@ -59,6 +59,12 @@ class PlacemarkJSONStore(private val context: Context) : PlacemarkStore {
     private fun logAll() {
         placemarks.forEach { Timber.i("$it") }
     }
+
+    //Delete function
+    override fun delete(placemark: PlacemarkModel) {
+        placemarks.remove(placemark)
+        serialize()
+    }
 }
 
 class UriParser : JsonDeserializer<Uri>,JsonSerializer<Uri> {

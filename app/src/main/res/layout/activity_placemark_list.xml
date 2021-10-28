@@ -25,7 +25,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <!-- blanking out quote button to get storee button working -->
-    <Button
+    <!--<Button
         android:id="@+id/btnQuote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         android:stateListAnimator="@null"
         android:text="@string/button_getQuote"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="16sp" />-->
 
     <!--<Button
         android:id="@+id/item_add"
@@ -78,7 +78,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="96dp"
         app:titleTextColor="@color/colorPrimary" />
 
 
