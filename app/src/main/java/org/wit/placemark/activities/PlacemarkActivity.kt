@@ -18,9 +18,14 @@ import org.wit.placemark.databinding.ActivityPlacemarkBinding
 import org.wit.placemark.main.MainApp
 import org.wit.placemark.models.Location
 import org.wit.placemark.models.PlacemarkModel
-import org.wit.placemark.showImagePicker
+import org.wit.placemark.helpers.showImagePicker
 import timber.log.Timber
 import timber.log.Timber.i
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
+import org.wit.placemark.helpers.showImagePicker
+
 
 class PlacemarkActivity : AppCompatActivity() {
 
@@ -29,7 +34,7 @@ class PlacemarkActivity : AppCompatActivity() {
     lateinit var app: MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
     private lateinit var mapIntentLauncher : ActivityResultLauncher<Intent>
-    var location = Location(52.245696, -7.139102, 15f)
+    //var location = Location(52.245696, -7.139102, 15f)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +60,7 @@ class PlacemarkActivity : AppCompatActivity() {
                 .load(placemark.image)
                 .into(binding.placemarkImage)
             if (placemark.image != Uri.EMPTY) {
-                binding.chooseImage.setText(R.string.change_placemark_image)
+               // binding.chooseImage.setText(R.string.change_placemark_image)
             }
         }
 
@@ -80,12 +85,30 @@ class PlacemarkActivity : AppCompatActivity() {
         binding.chooseImage.setOnClickListener {
             showImagePicker(imageIntentLauncher)
         }
-
+        //initialise location (Frank O'Connor's House)
         binding.placemarkLocation.setOnClickListener {
+            val location = Location(51.89354071113511, -8.470007880748083, 50f)
+            if (placemark.zoom != 0f) {
+                location.lat =  placemark.lat
+                location.lng = placemark.lng
+                location.zoom = placemark.zoom
+            }
             val launcherIntent = Intent(this, MapActivity::class.java)
                 .putExtra("location", location)
             mapIntentLauncher.launch(launcherIntent)
         }
+
+//added a getQuote binding to return a random shakespearean quote via Quote button
+
+      //  binding.btnQuote.setOnClickListener{
+      //      val client = OkHttpClient().newBuilder()
+      //          .build()
+      //      val request = Request.Builder()
+       //         .url("https://shakespeare-quotes-gen.herokuapp.com/api/v1/quotes/single")
+       //         .method("GET", null)
+      //          .build()
+      //      val response = client.newCall(request).execute()
+     //   }
 
         registerImagePickerCallback()
         registerMapCallback()
@@ -117,7 +140,7 @@ class PlacemarkActivity : AppCompatActivity() {
                             Picasso.get()
                                    .load(placemark.image)
                                    .into(binding.placemarkImage)
-                            binding.chooseImage.setText(R.string.change_placemark_image)
+                            //binding.chooseImage.setText(R.string.change_placemark_image)
                         } // end of if
                     }
                     RESULT_CANCELED -> { } else -> { }
@@ -125,6 +148,7 @@ class PlacemarkActivity : AppCompatActivity() {
             }
     }
 
+    //saves location in call back at close of map activity
     private fun registerMapCallback() {
         mapIntentLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult())
@@ -133,12 +157,18 @@ class PlacemarkActivity : AppCompatActivity() {
                     RESULT_OK -> {
                         if (result.data != null) {
                             i("Got Location ${result.data.toString()}")
-                            location = result.data!!.extras?.getParcelable("location")!!
+                            val location = result.data!!.extras?.getParcelable<Location>("location")!!
                             i("Location == $location")
+                            placemark.lat = location.lat
+                            placemark.lng = location.lng
+                            placemark.zoom = location.zoom
                         } // end of if
                     }
                     RESULT_CANCELED -> { } else -> { }
                 }
             }
     }
+
+
+
 }

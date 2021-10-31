@@ -28,11 +28,19 @@ class PlacemarkMemStore : PlacemarkStore {
             foundPlacemark.title = placemark.title
             foundPlacemark.description = placemark.description
             foundPlacemark.image = placemark.image
+            //save map details
+            foundPlacemark.lat = placemark.lat
+            foundPlacemark.lng = placemark.lng
+            foundPlacemark.zoom = placemark.zoom
             logAll()
         }
     }
 
     private fun logAll() {
         placemarks.forEach { i("$it") }
+    }
+
+    override fun delete(placemark: PlacemarkModel) {
+        placemarks.remove(placemark)
     }
 }
