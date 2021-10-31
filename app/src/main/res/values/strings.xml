@@ -1,17 +1,22 @@
 <resources>
     <string name="app_name">Storee</string>
-    <string name="button_addPlacemark">Add Story</string>
+    <string name="button_addPlacemark">Store Story</string>
     <string name="button_getQuote">Quote</string>
-    <string name="hint_placemarkTitle">Story Title</string>
-    <string name="hint_placemarkDescription">Story Notes</string>
+    <string name="hint_placemarkTitle">Title</string>
+    <string name="hint_placemarkDescription">"Once upon a time..."</string>
     <string name="menu_addPlacemark">Add</string>
     <string name="menu_deletePlacemark">Delete</string>
     <string name="menu_cancelPlacemark">Cancel</string>
-    <string name="enter_placemark_title"> Please enter a Story Title </string>
-    <string name="save_placemark"> Store Story </string>
-    <string name="button_addImage"> Add Image </string>
-    <string name="select_placemark_image">Select Story image</string>
-    <string name="change_placemark_image">Change Story image</string>
+    <string name="enter_placemark_title"> Please enter a story title </string>
+    <string name="save_placemark"> Store </string>
+    <string name="button_addImage"> Add Story Image </string>
+    <string name="select_placemark_image">Select Story Image</string>
+    <string name="change_placemark_image">Change Story Image</string>
     <string name="button_location">Set Story Location</string>
     <string name="title_activity_map">Map</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Character</string>
+    <string name="background_text"> store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories  store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store your stories store store your stories store </string>
+
+
 </resources>

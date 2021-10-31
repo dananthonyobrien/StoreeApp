@@ -17,7 +17,7 @@
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@android:color/holo_orange_dark"
             android:fitsSystemWindows="true"
             app:elevation="0dip"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -26,7 +26,7 @@
                 android:id="@+id/toolbarAdd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:titleTextColor="@color/colorPrimary" />
+                app:titleTextColor="@android:color/holo_orange_dark" />
         </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
@@ -47,37 +47,121 @@
                     android:layout_margin="8dp"
                     android:autofillHints=""
                     android:hint="@string/hint_placemarkTitle"
+                    android:typeface="sans"
                     android:inputType="text"
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp" />
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal"/>
 
+                <!-- Added automatically capitalise sentences and auto correct spellings -->
                 <EditText
                     android:id="@+id/description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:hint="@string/hint_placemarkDescription"
-                    android:inputType="text"
-                    android:maxLength="25"
-                    android:maxLines="1"
+                    android:inputType="text|textCapSentences|textAutoCorrect|textMultiLine"
+                    android:maxLength="10000"
+                    android:typeface="sans"
+                    android:minLines="12"
+                    android:maxLines="100"
                     android:padding="8dp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    />
 
-                <Button
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+
+                <ImageButton
                     android:id="@+id/chooseImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
                     android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
+                    android:background="@android:color/holo_orange_dark"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
+                    android:tooltipText="Add Image"
                     android:text="@string/button_addImage"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp"
+                    android:src="@drawable/ic_image_icon"
+                    />
+
+                <ImageButton
+                    android:id="@+id/placemarkLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:paddingBottom="8dp"
+                    android:tooltipText="Add Location"
+                    android:paddingTop="8dp"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="@string/button_location"
+                    android:src="@drawable/ic_location_icon" />
+
+                <ImageButton
+                    android:id="@+id/storyAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:paddingBottom="8dp"
+                    android:tooltipText="Add Audio"
+                    android:paddingTop="8dp"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="@string/button_location"
+                    android:src="@drawable/ic_audio_icon" />
+
+                <ImageButton
+                    android:id="@+id/quote"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:paddingBottom="8dp"
+                    android:tooltipText="Get Inspiration"
+                    android:paddingTop="8dp"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:text="@string/button_location"
+                    android:src="@drawable/ic_get_quote" />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:paddingTop="8dp"
+                    android:tooltipText="Delete Story"
+                    android:paddingBottom="8dp"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:src="@drawable/ic_delete_icon"
+                    />
+
+            </LinearLayout>
 
                 <ImageView
                     android:id="@+id/placemarkImage"
@@ -85,44 +169,26 @@
                     android:layout_height="wrap_content"
                     app:srcCompat="@mipmap/ic_launcher"/>
 
-                <Button
-                    android:id="@+id/placemarkLocation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:stateListAnimator="@null"
-                    android:text="@string/button_location"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp"/>
+
+
+
+
+
 
                 <Button
                     android:id="@+id/btnAdd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
+                    android:background="@android:color/holo_orange_dark"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:stateListAnimator="@null"
-                    android:text="@string/button_addPlacemark"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:text="@string/button_addPlacemark" />
 
-                <Button
-                    android:id="@+id/btnDelete"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:stateListAnimator="@null"
-                    android:text="@string/menu_deletePlacemark"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="16sp" />
+
 
 
 

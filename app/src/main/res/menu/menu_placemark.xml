@@ -5,5 +5,6 @@
     <item
         android:id="@+id/item_cancel"
         android:title="@string/menu_cancelPlacemark"
+        android:background="@android:color/holo_orange_dark"
         app:showAsAction="always"/>
 </menu>

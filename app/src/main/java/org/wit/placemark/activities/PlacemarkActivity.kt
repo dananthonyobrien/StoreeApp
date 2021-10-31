@@ -60,7 +60,7 @@ class PlacemarkActivity : AppCompatActivity() {
                 .load(placemark.image)
                 .into(binding.placemarkImage)
             if (placemark.image != Uri.EMPTY) {
-                binding.chooseImage.setText(R.string.change_placemark_image)
+               // binding.chooseImage.setText(R.string.change_placemark_image)
             }
         }
 
@@ -140,7 +140,7 @@ class PlacemarkActivity : AppCompatActivity() {
                             Picasso.get()
                                    .load(placemark.image)
                                    .into(binding.placemarkImage)
-                            binding.chooseImage.setText(R.string.change_placemark_image)
+                            //binding.chooseImage.setText(R.string.change_placemark_image)
                         } // end of if
                     }
                     RESULT_CANCELED -> { } else -> { }

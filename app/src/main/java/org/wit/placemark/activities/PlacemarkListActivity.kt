@@ -1,9 +1,12 @@
 package org.wit.placemark.activities
 
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.SearchView
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -39,7 +42,16 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+
+        // Search implementation
+        /*val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        (menu.findItem(R.id.search).actionView as SearchView).apply {
+            setSearchableInfo(searchManager.getSearchableInfo(componentName))
+        } */
+
         return super.onCreateOptionsMenu(menu)
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

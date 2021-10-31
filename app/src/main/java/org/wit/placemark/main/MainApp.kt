@@ -24,4 +24,6 @@ class MainApp : Application() {
 //        placemarks.add(PlacemarkModel("Two", "About two..."))
 //        placemarks.add(PlacemarkModel("Three", "About three..."))
     }
+
+
 }
