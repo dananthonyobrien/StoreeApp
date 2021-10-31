@@ -26,7 +26,7 @@
                 android:id="@+id/toolbarAdd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:titleTextColor="@android:color/holo_orange_dark" />
+                app:titleTextColor="@color/colorPrimary" />
         </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
@@ -52,8 +52,8 @@
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
                     android:gravity="center_horizontal"/>
 
                 <!-- Added automatically capitalise sentences and auto correct spellings -->
@@ -65,20 +65,26 @@
                     android:hint="@string/hint_placemarkDescription"
                     android:inputType="text|textCapSentences|textAutoCorrect|textMultiLine"
                     android:maxLength="10000"
+                    android:textColor="@color/colorAccent"
                     android:typeface="sans"
                     android:minLines="12"
                     android:maxLines="100"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
+                    android:gravity="top"
                     />
 
-
+                <ImageView
+                    android:id="@+id/placemarkImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_image_icon"/>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true">
+
 
 
                 <ImageButton
@@ -163,18 +169,33 @@
 
             </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/placemarkImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"/>
 
 
 
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAdd"
+                    android:layout_gravity="bottom|center"
+                    android:layout_margin="16dp"
+                    app:maxImageSize="90dp"
+                    android:background="@android:color/holo_orange_dark"
+                    app:backgroundTint="@android:color/holo_orange_dark"
+                    android:paddingTop="8dp"
+                    app:elevation="1dp"
+                    app:borderWidth="0dp"
+                    app:pressedTranslationZ="1dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:fabCustomSize="100dp"
+                    android:paddingBottom="8dp"
+                    android:src="@mipmap/ic_launcher_round"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:tooltipText="Store Story"
+                    app:showAsAction="always" />
 
 
-
-
+                <!--
                 <Button
                     android:id="@+id/btnAdd"
                     android:layout_width="match_parent"
@@ -187,7 +208,7 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
                     android:text="@string/button_addPlacemark" />
-
+                  -->
 
 
 

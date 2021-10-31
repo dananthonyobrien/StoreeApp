@@ -2,19 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- blanking out Storee screen button to add to image instead -->
     <item
         android:id="@+id/item_add"
-        android:icon="@android:drawable/ic_menu_add"
+        android:icon="@drawable/ic_add_new"
         android:tooltipText="Add Story"
         android:title="@string/menu_addPlacemark"
-        app:showAsAction="always" />
+        app:showAsAction="collapseActionView|ifRoom" />
 
     <!-- Search Icon added to toolbar -->
     <item android:id="@+id/search"
         android:title="@string/search_title"
         android:icon="@drawable/ic_search_icon"
-        android:showAsAction="collapseActionView|ifRoom"
+        app:showAsAction="collapseActionView|ifRoom"
         android:actionViewClass="android.widget.SearchView" />
+
+
+    <item android:id="@+id/about"
+        android:title="@string/about_text"
+        android:tooltipText="@string/about_text"
+        android:icon="@drawable/ic_about"
+        app:showAsAction="collapseActionView|ifRoom"/>
 
 </menu>

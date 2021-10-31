@@ -55,7 +55,7 @@ class PlacemarkActivity : AppCompatActivity() {
             placemark = intent.extras?.getParcelable("placemark_edit")!!
             binding.placemarkTitle.setText(placemark.title)
             binding.description.setText(placemark.description)
-            binding.btnAdd.setText(R.string.save_placemark)
+            //binding.btnAdd.setText(R.string.save_placemark)
             Picasso.get()
                 .load(placemark.image)
                 .into(binding.placemarkImage)

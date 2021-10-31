@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-anydpi/ic_audio_icon.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_delete_icon.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_get_quote.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_image_icon.xml" value="0.21944444444444444" />
         <entry key="app/src/main/res/drawable-anydpi/ic_item_add.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_location_icon.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_return.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_search_icon.xml" value="0.25277777777777777" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1390625" />
+        <entry key="app/src/main/res/drawable/custom_bordered_ripple.xml" value="0.21944444444444444" />
+        <entry key="app/src/main/res/drawable/custom_borderless_ripple.xml" value="0.21944444444444444" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1390625" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ripple.xml" value="0.21944444444444444" />
         <entry key="app/src/main/res/layout/activity_placemark.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.14" />
+        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/card_placemark.xml" value="0.14" />
-        <entry key="app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_placemark.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.22" />
         <entry key="app/src/main/res/menu/menu_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/menu/options_menu.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
