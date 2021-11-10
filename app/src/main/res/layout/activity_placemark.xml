@@ -67,7 +67,7 @@
                     android:maxLength="10000"
                     android:textColor="@color/colorAccent"
                     android:typeface="sans"
-                    android:minLines="12"
+                    android:minLines="8"
                     android:maxLines="100"
                     android:padding="8dp"
                     android:textSize="20sp"
