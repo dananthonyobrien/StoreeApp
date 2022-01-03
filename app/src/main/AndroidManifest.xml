@@ -14,16 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Placemark">
 
-        <activity android:name=".views.login.LoginView"
+        <activity
+            android:name=".views.login.LoginView"
+            android:exported="true"
             android:label="@string/title_activity_login"
-            android:launchMode="singleTop"
-            android:exported="true">
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".views.map.PlacemarkMapView"
             android:exported="true"
@@ -40,8 +41,7 @@
             android:label="@string/title_activity_map" />
         <activity
             android:name=".views.placemarklist.PlacemarkListView"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity android:name=".views.placemark.PlacemarkView" />
     </application>
 
