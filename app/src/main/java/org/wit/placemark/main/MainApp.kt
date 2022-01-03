@@ -1,10 +1,8 @@
 package org.wit.placemark.main
 
 import android.app.Application
-import org.wit.placemark.models.PlacemarkJSONStore
-import org.wit.placemark.models.PlacemarkMemStore
-import org.wit.placemark.models.PlacemarkModel
-import org.wit.placemark.models.PlacemarkStore
+import org.wit.placemark.models.*
+import org.wit.placemark.room.PlacemarkStoreRoom
 import timber.log.Timber
 import timber.log.Timber.i
 
@@ -15,9 +13,7 @@ class MainApp : Application() {
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-        placemarks = PlacemarkJSONStore(applicationContext)
-
+        placemarks = PlacemarkFireStore(applicationContext)
         i("Placemark started")
-
     }
 }
