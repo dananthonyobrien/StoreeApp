@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="#FF8800"
         android:fitsSystemWindows="true"
         app:elevation="0dip"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -22,11 +22,49 @@
             app:titleTextColor="@color/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:gravity="center"
+        android:text="@string/background_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="21dp"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="673dp"
         android:scrollbars="vertical"
+        app:layout_anchor="@+id/recyclerView"
+        app:layout_anchorGravity="center"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/item_add"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        app:maxImageSize="90dp"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        android:paddingTop="8dp"
+        app:elevation="1dp"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="1dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:fabCustomSize="100dp"
+        android:paddingBottom="8dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:stateListAnimator="@null"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:tooltipText="Add Story"
+        app:showAsAction="always" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

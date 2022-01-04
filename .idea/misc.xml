@@ -6,14 +6,15 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12864583333333332" />
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_new.xml" value="0.18020833333333333" />
-        <entry key="app/src/main/res/layout/activity_placemark.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.1692734611503532" />
+        <entry key="app/src/main/res/layout/activity_placemark.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_add_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.18297101449275363" />
         <entry key="app/src/main/res/layout/home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/loading.xml" value="0.12454710144927536" />
         <entry key="app/src/main/res/layout/test_layout.xml" value="0.5" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/menu/menu_placemark.xml" value="0.3494791666666667" />
