@@ -28,3 +28,15 @@ Storee stores notes, pictures, voice recordings, and locations for your stories.
 - Ripple effects added to buttons so that users understand they have been activated and will move to a new screen (not successful)
 - Tool Tips added to help users understand function of icon buttons
 
+## Functionality
+
+## UML and Class Diagrams
+
+## UX / DX Approach
+
+## Git Approach
+
+## Personal Statement
+
+
+
