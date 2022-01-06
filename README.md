@@ -29,6 +29,7 @@ Storee stores notes, pictures, voice recordings, and locations for your stories.
 - Tool Tips added to help users understand function of icon buttons
 
 ## Functionality
+- List of third party APIs
 
 ## UML and Class Diagrams
 
