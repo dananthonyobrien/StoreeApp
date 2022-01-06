@@ -7,155 +7,237 @@
     tools:context="org.wit.placemark.views.placemark.PlacemarkView">
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-16dp">
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="#FF8800"
             android:fitsSystemWindows="true"
             app:elevation="0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarAdd"
                 android:layout_width="match_parent"
-                android:backgroundTint="@android:color/holo_orange_dark"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
                 app:titleTextColor="@color/colorPrimary" />
         </com.google.android.material.appbar.AppBarLayout>
 
+        <EditText
+            android:id="@+id/placemarkTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_placemarkTitle"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:typeface="sans" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <EditText
+            android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/appBarLayout"
+            android:layout_margin="8dp"
+            android:gravity="top"
+            android:hint="@string/hint_placemarkDescription"
+            android:inputType="text|textCapSentences|textAutoCorrect|textMultiLine"
+            android:maxLength="10000"
+            android:maxLines="100"
+            android:minLines="8"
+            android:padding="8dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/placemarkImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:srcCompat="@drawable/ic_image_icon_foreground" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="148dp"
-            android:layout_marginBottom="-148dp">
+            android:layout_marginBottom="208dp"
+            android:orientation="horizontal">
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/chooseImage"
-                android:layout_width="379dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="13dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="19dp"
-                android:background="@color/colorAccent"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
+                android:src="@drawable/ic_image_icon_foreground"
                 android:text="@string/button_addImage"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description" />
+                android:tooltipText="Add Image" />
 
-            <EditText
-                android:id="@+id/description"
-                android:layout_width="249dp"
-                android:layout_height="62dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:hint="@string/hint_placemarkDescription"
-                android:inputType="text"
-                android:maxLength="25"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toStartOf="@+id/lat"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/placemarkTitle" />
+            <ImageButton
+                android:id="@+id/placemarkLocation"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/ic_location_icon_foreground"
+                android:stateListAnimator="@null"
+                android:text="@string/button_location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:tooltipText="Add Location" />
 
-            <EditText
-                android:id="@+id/placemarkTitle"
-                android:layout_width="248dp"
-                android:layout_height="57dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="72dp"
-                android:autofillHints=""
-                android:hint="@string/hint_placemarkTitle"
-                android:inputType="text"
-                android:maxLength="25"
-                android:maxLines="1"
-                android:padding="8dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+            <ImageButton
+                android:id="@+id/storyAudio"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/ic_audio_icon_foreground"
+                android:stateListAnimator="@null"
+                android:text="Record Story Audio"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:tooltipText="Add Audio" />
 
-                <requestFocus />
-            </EditText>
+            <ImageButton
+                android:id="@+id/btVarl"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/ic_get_quote_foreground"
+                android:stateListAnimator="@null"
+                android:text="Get quotation"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:tooltipText="Get Inspiration" />
 
-            <TextView
-                android:id="@+id/lat"
-                android:layout_width="95dp"
-                android:layout_height="19dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="28dp"
-                android:text="00.000000"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:src="@drawable/ic_delete_icon_foreground"
+                android:stateListAnimator="@null"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:tooltipText="Delete Story" />
 
-            <TextView
-                android:id="@+id/lng"
-                android:layout_width="92dp"
-                android:layout_height="19dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="28dp"
-                android:text="00.000000"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lat" />
+        </LinearLayout>
 
-            <ImageView
-                android:id="@+id/placemarkImage"
-                android:layout_width="401dp"
-                android:layout_height="178dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/chooseImage"
-                app:srcCompat="@mipmap/ic_launcher" />
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView2"
-                android:layout_width="405dp"
-                android:layout_height="244dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/placemarkImage" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quotation"
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="90dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="84dp"
-                android:text="Location"
-                android:textAlignment="center"
-                app:layout_constraintStart_toEndOf="@+id/placemarkTitle"
-                app:layout_constraintTop_toTopOf="parent" />
+            />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_orange_dark"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/storee_icon"
+            android:stateListAnimator="@null"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:tooltipText="Store Story"
+            app:backgroundTint="@android:color/holo_orange_dark"
+            app:borderWidth="0dp"
+            app:elevation="1dp"
+            app:fabCustomSize="100dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:maxImageSize="90dp"
+            app:pressedTranslationZ="1dp"
+            app:showAsAction="always"
 
+            />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="95dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:text="00.000000"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lng"
+            android:layout_width="92dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:text="00.000000"
+            android:textAlignment="center" />
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="405dp"
+            android:layout_height="244dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="84dp"
+            android:text="Location"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
