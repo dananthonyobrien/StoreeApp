@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/addPlacemarkFragment">
+
+    <fragment
+        android:id="@+id/addPlacemarkFragment"
+        android:name="org.wit.placemark.AddPlacemarkFragment"
+        android:label="fragment_add_placemark"
+        tools:layout="@layout/fragment_add_placemark" />
+    <fragment
+        android:id="@+id/placemarksMapFragment"
+        android:name="org.wit.placemark.PlacemarksMapFragment"
+        android:label="fragment_placemarks_map"
+        tools:layout="@layout/fragment_placemarks_map" />
+</navigation>

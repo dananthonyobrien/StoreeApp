@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/donateFragment"
+            android:icon="@drawable/ic_add_new_foreground"
+            android:title="Add" />
+        <item
+            android:id="@+id/reportFragment"
+            android:icon="@drawable/ic_location_icon_foreground"
+            android:title="Map" />
+
+    </group>
+    <item android:title="Access Control">
+        <menu>
+            <item
+                android:id="@+id/signout"
+                android:icon="@drawable/ic_return_icon_foreground"
+                android:onClick="signOut"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+</menu>
