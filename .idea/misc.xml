@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/ic_audio_icon_foreground.xml" value="0.24895833333333334" />
         <entry key="app/src/main/res/drawable/ic_delete_icon_foreground.xml" value="0.24895833333333334" />
         <entry key="app/src/main/res/drawable/ic_location_icon_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_storee_icon.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/drawable/ic_swipe_delete.xml" value="0.2764102564102564" />
         <entry key="app/src/main/res/drawable/ic_swipe_edit.xml" value="0.2764102564102564" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.15648148148148147" />
@@ -14,13 +15,15 @@
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_new.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_placemark.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_quote.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.26458333333333334" />
         <entry key="app/src/main/res/layout/card_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_add_placemark.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.1671195652173913" />
+        <entry key="app/src/main/res/layout/fragment_quote.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.18297101449275363" />
         <entry key="app/src/main/res/layout/home.xml" value="0.33" />
         <entry key="app/src/main/res/layout/loading.xml" value="0.12454710144927536" />

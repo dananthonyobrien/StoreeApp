@@ -30,6 +30,7 @@
     <!-- login strings -->
     <string name="title_activity_login"> Signup/Login to Placemark</string>
     <string name="menu_showMap">Show Map</string>
+
     <string name="menu_logout">Logout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -42,5 +43,6 @@
     <string name="quotation">Quotation</string>
     <string name="menu_quote">Quote</string>
     <string name="quote_message">Quote of the Day</string>
+    <string name="fragment_quote">Quotes to inspire your writing</string>
 
 </resources>

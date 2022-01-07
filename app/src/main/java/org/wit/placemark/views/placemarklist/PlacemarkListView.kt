@@ -35,6 +35,8 @@ class PlacemarkListView : AppCompatActivity(), PlacemarkListener {
         }
         setSupportActionBar(binding.toolbar)
 
+
+
         presenter = PlacemarkListPresenter(this)
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager

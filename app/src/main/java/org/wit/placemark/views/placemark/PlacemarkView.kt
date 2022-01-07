@@ -34,9 +34,9 @@ class PlacemarkView : AppCompatActivity() {
     private lateinit var presenter: PlacemarkPresenter
     lateinit var map: GoogleMap
     var placemark = PlacemarkModel()
-    private lateinit var textView3: TextView
+    //private lateinit var textView3: TextView
     //var quote_url = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
-    val queue = Volley.newRequestQueue(this)
+    //val queue = Volley.newRequestQueue(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -140,8 +140,8 @@ class PlacemarkView : AppCompatActivity() {
         Picasso.get()
             .load(placemark.image)
             .into(binding.placemarkImage)
-            // commenting out while I figure out error with setText. working below in showLocation, so must be something to do with chooseImage element
-            // binding.chooseImage.setText(R.string.change_placemark_image)
+           //  commenting out while I figure out error with setText. working below in showLocation, so must be something to do with chooseImage element
+            binding.chooseImage //setText(R.string.change_placemark_image)
        }
         this.showLocation(placemark.location)
     }
