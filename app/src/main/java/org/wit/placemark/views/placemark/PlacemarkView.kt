@@ -41,7 +41,7 @@ class PlacemarkView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        textView3 = findViewById(R.id.textView3)
+        //textView3 = findViewById(R.id.textView3)
         binding = ActivityPlacemarkBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.toolbarAdd.title = title

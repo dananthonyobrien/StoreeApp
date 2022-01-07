@@ -60,7 +60,9 @@ class PlacemarkListView : AppCompatActivity(), PlacemarkListener {
         when (item.itemId) {
             R.id.item_add1 -> { presenter.doAddPlacemark() }
             R.id.item_add -> { presenter.doAddPlacemark() }
+            R.id.item_quote -> { presenter.doQuote() }
             R.id.item_map -> { presenter.doShowPlacemarksMap() }
+
             R.id.item_logout -> {
                 GlobalScope.launch(Dispatchers.IO) {
                     presenter.doLogout()

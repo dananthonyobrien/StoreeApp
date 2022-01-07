@@ -40,5 +40,7 @@
     <string name="nav_header_subtitle">storee@storee.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="quotation">Quotation</string>
+    <string name="menu_quote">Quote</string>
+    <string name="quote_message">Quote of the Day</string>
 
 </resources>

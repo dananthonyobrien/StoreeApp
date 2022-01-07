@@ -12,6 +12,7 @@ import org.wit.placemark.models.PlacemarkModel
 import org.wit.placemark.views.login.LoginView
 import org.wit.placemark.views.placemark.PlacemarkView
 import org.wit.placemark.views.map.PlacemarkMapView
+import org.wit.placemark.views.quote.QuoteFragment
 
 class PlacemarkListPresenter(private val view: PlacemarkListView) {
 
@@ -28,6 +29,11 @@ class PlacemarkListPresenter(private val view: PlacemarkListView) {
 
     fun doAddPlacemark() {
         val launcherIntent = Intent(view, PlacemarkView::class.java)
+        editIntentLauncher.launch(launcherIntent)
+    }
+
+    fun doQuote() {
+        val launcherIntent = Intent(view, QuoteFragment::class.java)
         editIntentLauncher.launch(launcherIntent)
     }
 

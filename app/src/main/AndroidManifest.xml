@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Placemark">
 
+
+
+
         <activity
             android:name=".views.login.LoginView"
             android:exported="true"
@@ -46,7 +49,7 @@
             android:label="@string/title_activity_map" />
         <activity
             android:name=".views.placemarklist.PlacemarkListView"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity android:name=".views.placemark.PlacemarkView" />
     </application>
 
