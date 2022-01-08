@@ -74,7 +74,7 @@ class PlacemarkView : AppCompatActivity() {
         }
 
     }
-
+// Quotation API retrival method
     fun getQuoteURL () {
         val queue = Volley.newRequestQueue(this)
         val quoteUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
