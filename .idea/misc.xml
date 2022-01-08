@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23125" />
         <entry key="app/src/main/res/drawable/ic_audio_icon_foreground.xml" value="0.24895833333333334" />
         <entry key="app/src/main/res/drawable/ic_delete_icon_foreground.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/ic_image_icon_foreground.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_location_icon_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_storee_icon.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/drawable/ic_swipe_delete.xml" value="0.2764102564102564" />
@@ -20,18 +21,20 @@
         <entry key="app/src/main/res/layout/activity_quote.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.26458333333333334" />
         <entry key="app/src/main/res/layout/card_placemark.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_home.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/content_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_add_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/fragment_quote.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.18297101449275363" />
-        <entry key="app/src/main/res/layout/home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/home.xml" value="0.16" />
         <entry key="app/src/main/res/layout/loading.xml" value="0.12454710144927536" />
         <entry key="app/src/main/res/layout/nav_header.xml" value="0.26458333333333334" />
         <entry key="app/src/main/res/layout/test_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/men_edit_location.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/menu/menu_placemark.xml" value="0.3494791666666667" />
-        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.26458333333333334" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.539216370775132" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23125" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23125" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_storee_icon.xml" value="0.23125" />

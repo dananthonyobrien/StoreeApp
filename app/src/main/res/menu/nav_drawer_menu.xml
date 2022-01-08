@@ -4,22 +4,22 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/donateFragment"
+            android:id="@+id/quoteFragment"
             android:icon="@drawable/ic_add_new_foreground"
-            android:title="Add" />
+            android:title="@string/add" />
         <item
-            android:id="@+id/reportFragment"
+            android:id="@+id/mapView2"
             android:icon="@drawable/ic_location_icon_foreground"
-            android:title="Map" />
+            android:title="@string/map" />
 
     </group>
-    <item android:title="Access Control">
+    <item android:title="@string/access_control">
         <menu>
             <item
                 android:id="@+id/signout"
                 android:icon="@drawable/ic_return_icon_foreground"
                 android:onClick="signOut"
-                android:title="Sign Out" />
+                android:title="@string/sign_out" />
         </menu>
     </item>
 </menu>

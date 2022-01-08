@@ -35,13 +35,15 @@ class PlacemarkView : AppCompatActivity() {
     lateinit var map: GoogleMap
     var placemark = PlacemarkModel()
     //private lateinit var textView3: TextView
-    //var quote_url = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
-    //val queue = Volley.newRequestQueue(this)
+   // var quote_url = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
+   // val queue = Volley.newRequestQueue(this)
+   // val textView3 = findViewById<TextView>(R.id.text)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //textView3 = findViewById(R.id.textView3)
+       // textView3 = findViewById(R.id.textView3)
         binding = ActivityPlacemarkBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.toolbarAdd.title = title
@@ -53,6 +55,7 @@ class PlacemarkView : AppCompatActivity() {
             presenter.cachePlacemark(binding.placemarkTitle.text.toString(), binding.description.text.toString())
             presenter.doSelectImage()
         }
+
 
         binding.mapView2.setOnClickListener {
             presenter.cachePlacemark(binding.placemarkTitle.text.toString(), binding.description.text.toString())
@@ -66,26 +69,28 @@ class PlacemarkView : AppCompatActivity() {
             it.setOnMapClickListener { presenter.doSetLocation() }
         }
 
-      //  binding.btVarl.setOnClickListener {
-      //      getQuoteURL()
-      //  }
+        binding.btVarl.setOnClickListener {
+            getQuoteURL()
+        }
 
     }
 
-    //fun getQuoteURL () {
-     //   val queue = Volley.newRequestQueue(this)
-     //   val quoteUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
+    fun getQuoteURL () {
+        val queue = Volley.newRequestQueue(this)
+        val quoteUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
+        val textView3 = findViewById<TextView>(R.id.textView3)
+
 
         // Request a string response from the provided URL.
-      //  val stringRequest = StringRequest(Request.Method.GET, quoteUrl, { response ->
-       //         textView3.text = "Quote of the Day: ${response}"
-        //    },
-        //    { textView3.text = "That didn't work!" })
+        val stringRequest = StringRequest(Request.Method.GET, quoteUrl, Response.Listener<String> { response ->
+               textView3.text = "Quote of the Day: ${response}"
+            },
+            Response.ErrorListener { textView3.text = "That didn't work!" })
 
 /* Add the request to the RequestQueue. */
-       // queue.add(stringRequest)
+        queue.add(stringRequest)
 
-   // }
+    }
 
 
             // val stringReq = StringRequest (Request.Method.GET, url,

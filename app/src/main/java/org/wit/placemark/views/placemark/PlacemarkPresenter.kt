@@ -1,14 +1,11 @@
 package org.wit.placemark.views.placemark
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
-import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
@@ -23,6 +20,17 @@ import org.wit.placemark.views.location.EditLocationView
 import timber.log.Timber
 import timber.log.Timber.i
 
+import android.annotation.SuppressLint
+import android.util.Log
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+//import kotlinx.android.synthetic.main.activity_placemark.*
+import org.json.JSONObject
+
 class PlacemarkPresenter(private val view: PlacemarkView) {
     private val locationRequest = createDefaultLocationRequest()
     var map: GoogleMap? = null
@@ -36,6 +44,7 @@ class PlacemarkPresenter(private val view: PlacemarkView) {
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
     var edit = false;
     private val location = Location(52.245696, -7.139102, 15f)
+
 
     init {
 
@@ -87,6 +96,33 @@ class PlacemarkPresenter(private val view: PlacemarkView) {
     fun doSelectImage() {
         showImagePicker(imageIntentLauncher)
     }
+
+
+
+
+    //fun getQuoteURL () {
+    //   val queue = Volley.newRequestQueue(this)
+    //   val quoteUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
+
+     //Request a string response from the provided URL.
+    //  val stringRequest = StringRequest(Request.Method.GET, quoteUrl, { response ->
+     //        textView3.text = "Quote of the Day: ${response}"
+      //  },
+     //   { textView3.text = "That didn't work!" })
+
+/* Add the request to the RequestQueue. */
+    // queue.add(stringRequest)
+
+    // }
+
+
+    // val stringReq = StringRequest (Request.Method.GET, url,
+    //      Response.Listener<String>{response.toString}
+    //}
+
+
+
+
 
     fun doSetLocation() {
         locationManualyChanged = true;

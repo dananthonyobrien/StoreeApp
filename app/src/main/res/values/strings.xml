@@ -44,5 +44,9 @@
     <string name="menu_quote">Quote</string>
     <string name="quote_message">Quote of the Day</string>
     <string name="fragment_quote">Quotes to inspire your writing</string>
+    <string name="add">Add</string>
+    <string name="map">Map</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="access_control">Access Control</string>
 
 </resources>

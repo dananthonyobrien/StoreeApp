@@ -171,6 +171,12 @@
                 </LinearLayout>
 
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:text="@string/quotation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
 
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -182,7 +188,7 @@
                     android:background="@android:color/holo_orange_dark"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:src="@mipmap/ic_storee_icon_foreground"
+                    android:src="@drawable/ic_storee_icon"
                     android:stateListAnimator="@null"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
@@ -195,14 +201,7 @@
                     app:pressedTranslationZ="1dp"
                     app:showAsAction="always" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
 
-
-                    />
-                <!-- android:text="@string/quotation"-->
 
 
                 <com.google.android.gms.maps.MapView

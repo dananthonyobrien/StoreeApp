@@ -21,6 +21,8 @@
         app:layout_constraintVertical_bias="0.223"
         app:srcCompat="@drawable/storee_icon" />
 
+
+
     <TextView
         android:id="@+id/tvAboutUs"
         android:layout_width="wrap_content"
@@ -35,4 +37,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/quotation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
