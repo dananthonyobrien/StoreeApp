@@ -11,13 +11,13 @@
     <item
         android:id="@+id/item_quote"
         android:icon="@android:drawable/ic_menu_add"
-        android:title="@string/menu_quote"
+        android:title="@string/about"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/item_map"
         android:icon="@android:drawable/ic_menu_mapmode"
-        android:title="@string/menu_showMap"
+        android:title="@string/map"
         app:showAsAction="never"/>
 
     <item

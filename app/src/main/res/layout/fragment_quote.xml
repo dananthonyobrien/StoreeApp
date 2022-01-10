@@ -27,7 +27,7 @@
         android:id="@+id/tvAboutUs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quote_message"
+        android:text="@string/aboutStoree"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -42,7 +42,6 @@
     android:id="@+id/textView3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/quotation"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     />

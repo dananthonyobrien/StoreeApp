@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_fab_icon.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23125" />
         <entry key="app/src/main/res/drawable/ic_audio_icon_foreground.xml" value="0.24895833333333334" />
         <entry key="app/src/main/res/drawable/ic_delete_icon_foreground.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/ic_fab5_icon_foreground.xml" value="0.28802083333333334" />
+        <entry key="app/src/main/res/drawable/ic_fab_icon.xml" value="0.24739583333333334" />
         <entry key="app/src/main/res/drawable/ic_image_icon_foreground.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_location_icon_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_storee_icon.xml" value="0.19427083333333334" />
@@ -16,13 +19,14 @@
         <entry key="app/src/main/res/layout/activity_map.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_new.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_placemark.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_placemark_list.xml" value="0.24178974889475346" />
         <entry key="app/src/main/res/layout/activity_placemark_maps.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_quote.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/app_bar_home.xml" value="0.26458333333333334" />
-        <entry key="app/src/main/res/layout/card_placemark.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_placemark.xml" value="0.33" />
         <entry key="app/src/main/res/layout/content_home.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/content_placemark_maps.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/fragment_add_placemark.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.1671195652173913" />
         <entry key="app/src/main/res/layout/fragment_quote.xml" value="0.19322916666666667" />

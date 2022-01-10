@@ -75,6 +75,10 @@ class PlacemarkView : AppCompatActivity() {
 
     }
 // Quotation API retrival method
+
+
+      // Quotation API retrival method
+
     fun getQuoteURL () {
         val queue = Volley.newRequestQueue(this)
         val quoteUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1"
@@ -83,14 +87,19 @@ class PlacemarkView : AppCompatActivity() {
 
         // Request a string response from the provided URL.
         val stringRequest = StringRequest(Request.Method.GET, quoteUrl, Response.Listener<String> { response ->
-               textView3.text = "Quote of the Day: ${response}"
+               textView3.text = ("${response}").substring(62)
             },
             Response.ErrorListener { textView3.text = "That didn't work!" })
 
-/* Add the request to the RequestQueue. */
+
+
         queue.add(stringRequest)
 
     }
+
+
+
+
 
 
             // val stringReq = StringRequest (Request.Method.GET, url,
@@ -139,7 +148,7 @@ class PlacemarkView : AppCompatActivity() {
 
     fun showPlacemark(placemark: PlacemarkModel) {
         if (binding.placemarkTitle.text.isEmpty()) binding.placemarkTitle.setText(placemark.title)
-        if (binding.description.text.isEmpty())  binding.description.setText(placemark.description)
+        if (binding.description.text!!.isEmpty())  binding.description.setText(placemark.description)
 
         if (placemark.image != "") {
         Picasso.get()

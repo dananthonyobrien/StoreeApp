@@ -58,7 +58,39 @@
                     android:textSize="25sp"
                     android:typeface="sans" />
 
-                <EditText
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00695C"
+                    android:hint="@string/descriptionHint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="top"
+                        android:inputType="text|textCapSentences|textAutoCorrect|textMultiLine"
+                        android:maxLength="10000"
+                        android:maxLines="100"
+                        android:minLines="8"
+                        android:padding="8dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp"
+                        android:typeface="sans"
+                        android:background="@null"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--android:hint="@string/hint_placemarkDescription"-->
+
+
+
+
+               <!-- <EditText
                     android:id="@+id/description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,22 +104,47 @@
                     android:padding="8dp"
                     android:textColor="@color/colorAccent"
                     android:textSize="20sp"
-                    android:typeface="sans" />
+                    android:typeface="sans" /> -->
 
-                <ImageView
-                    android:id="@+id/placemarkImage"
-                    android:layout_width="match_parent"
+
+                <LinearLayout
+                    android:id="@+id/outputs"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/description"
-                    app:srcCompat="@drawable/ic_image_icon_foreground" />
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="125dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="italic"
+                        android:shadowColor="#888888"
+                        android:textAlignment="center"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/placemarkImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center_horizontal"
+                        app:layout_constraintTop_toBottomOf="@+id/description"
+                        app:srcCompat="@drawable/ic_image_icon_foreground" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/buttons"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="208dp"
                     android:orientation="horizontal">
+
+                    <!--android:layout_marginBottom="208dp"-->
+
 
 
                     <ImageButton
@@ -132,7 +189,7 @@
                         android:paddingBottom="8dp"
                         android:src="@drawable/ic_audio_icon_foreground"
                         android:stateListAnimator="@null"
-                        android:text="Record Story Audio"
+                        android:text="@string/record_story_audio"
                         android:textColor="@color/colorPrimary"
                         android:textSize="16sp"
                         android:tooltipText="Add Audio" />
@@ -148,7 +205,7 @@
                         android:paddingBottom="8dp"
                         android:src="@drawable/ic_get_quote_foreground"
                         android:stateListAnimator="@null"
-                        android:text="Get quotation"
+                        android:text="@string/get_quotation"
                         android:textColor="@color/colorPrimary"
                         android:textSize="16sp"
                         android:tooltipText="Get Inspiration" />
@@ -171,15 +228,13 @@
                 </LinearLayout>
 
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:text="@string/quotation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    />
 
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+
+
+
+               <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnAdd"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -188,7 +243,7 @@
                     android:background="@android:color/holo_orange_dark"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:src="@drawable/ic_storee_icon"
+                    android:src="@drawable/ic_fab5_icon_foreground"
                     android:stateListAnimator="@null"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
@@ -197,9 +252,9 @@
                     app:borderWidth="0dp"
                     app:elevation="1dp"
                     app:fabCustomSize="100dp"
-                    app:maxImageSize="90dp"
+                    app:maxImageSize="150dp"
                     app:pressedTranslationZ="1dp"
-                    app:showAsAction="always" />
+                    app:showAsAction="always" />-->
 
 
 

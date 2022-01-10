@@ -10,10 +10,11 @@
     <fragment
         android:id="@+id/quoteFragment"
         android:name="org.wit.placemark.views.quote.QuoteFragment"
-        android:label="@string/fragment_quote"
+        android:label="@string/aboutStoree"
         tools:layout="@layout/fragment_quote" />
 
-   <!-- <fragment
+
+    <!--<fragment
         android:id="@+id/FirstFragment"
         android:name="org.wit.placemark.activities.FirstFragment"
         android:label="@string/first_fragment_label"
@@ -33,4 +34,5 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment> -->
+
 </navigation>
