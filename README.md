@@ -30,7 +30,10 @@ Storee stores notes, pictures, voice recordings, and locations for your stories.
 - Tool Tips added to help users understand function of icon buttons
 
 ## Git
-Git tagged releases used. 
+Git tagged releases used. However, as this project was recreated from a later lab for assignment 2, there are two distinct and un-joinable branches (v4 based on older lab and v7 based on later one).
+
+## Personal Statement
+There are several significant gaps in this project, including functioning fragments and nav drawer. The Quotation API does work, but a lot more work needs to be done by me to understand how to effectively parse response data, particularly in Android Studio.
 
 
 
