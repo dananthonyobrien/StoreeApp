@@ -32,6 +32,7 @@ class Home : AppCompatActivity() {
     //private lateinit var appBarConfiguration: AppBarConfiguration
     //private lateinit var loggedInViewModel : LoggedInViewModel
 
+    //test comment
 // test comment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
